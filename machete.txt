@@ -1,0 +1,241 @@
+//Simulador de precio de guitarras
+
+// Primera prompt con 3 opciones
+let seleccion1 = prompt("Elige entre fender, ibanez o gibson");
+let respuesta = "";
+while(respuesta !== "respuesta_correcta"){
+   respuesta = prompt("Introduzca la respuesta correcta");
+   console.log (`la marca es ${seleccion1}`)
+}
+
+// Anidamos la segunda prompt dependiendo de la selección anterior
+if (seleccion1 === "fender") {
+   let seleccion2 = prompt("Seleccionaste fender, ahora elige entre stra o tele");
+   console.log (`el modelo es ${seleccion2}`)
+   // Tercera prompt dependiendo de la selección anterior
+   if (seleccion2 === "stra") {
+      alert("la guitarra stratocaster cuesta U$S 1100");
+      console.log (`el precio es de U$S 1100`)
+   } if (seleccion2 === "tele") {
+      alert("la guitarra telecaster cuesta U$S 900");
+      console.log(`el precio es de U$S 900`)
+   }
+} 
+if (seleccion1 === "ibanez") {
+   let seleccion2 = prompt("Seleccionaste Ibanez, ahora elige entre ibanez1 o ibanez2 ");
+
+   // Tercera prompt dependiendo de la selección anterior
+   if (seleccion2 === "ibanez1") {
+      alert("la guitarra ibanez1 cuesta U$S 950");
+   } else {
+      alert("la guitarra ibanez2 cuesta U$S 1200");
+   }
+
+} 
+if(seleccion1 === "gibson"){
+   let seleccion2 = prompt("Seleccionaste gibson, ahora elige entre gibson1 o gibson2");
+
+   // Tercera prompt dependiendo de la selección anterior
+   if (seleccion2 =dasdas== "gibson1") {
+      alert("la guitarra gibson1 cuesta U$S 800");
+   } else {
+      alert("la guitarra gibson cuesta U$S 1500");
+   }
+}
+
+
+//agregar calculo de envio si es de buenos aires
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+let opcion;
+
+while (true) {
+  opcion = prompt('Selecciona una marca entre fender, gibson, ibanez');
+
+  if (opcion === 'fender') {
+    console.log('Has seleccionado la opción A.');
+    break;
+  } else if (opcion === 'gibson') {
+    console.log('Has seleccionado la opción B.');
+    break;
+  } else if (opcion === 'ibanez') {
+    console.log('Has seleccionado la opción C.');
+    break;
+  } else {
+    alert('Opción inválida. stock disponible fender, gibson, ibanez.');
+  }
+}
+
+
+
+
+------------------------------------------------------------------
+
+
+
+
+let opcion;
+
+opcion = prompt('Selecciona una de las siguientes opciones: \n 1 - Opción A \n 2 - Opción B \n 3 - Opción C');
+
+if (opcion === '1') {
+  let subopcionA = prompt('Selecciona una de las siguientes opciones para la opción A: \n 1 - Subopción A1 \n 2 - Subopción A2');
+
+  if (subopcionA === '1') {
+    console.log('Has seleccionado la subopción A1 de la opción A.');
+  } else if (subopcionA === '2') {
+    console.log('Has seleccionado la subopción A2 de la opción A.');
+  } else {
+    console.log('Subopción inválida.');
+  }
+} else if (opcion === '2') {
+  let subopcionB = prompt('Selecciona una de las siguientes opciones para la opción B: \n 1 - Subopción B1 \n 2 - Subopción B2');
+
+  if (subopcionB === '1') {
+    console.log('Has seleccionado la subopción B1 de la opción B.');
+  } else if (subopcionB === '2') {
+    console.log('Has seleccionado la subopción B2 de la opción B.');
+  } else {
+    console.log('Subopción inválida.');
+  }
+} else if (opcion === '3') {
+  let subopcionC = prompt('Selecciona una de las siguientes opciones para la opción C: \n 1 - Subopción C1 \n 2 - Subopción C2');
+
+  if (subopcionC === '1') {
+    console.log('Has seleccionado la subopción C1 de la opción C.');
+  } else if (subopcionC === '2') {
+    console.log('Has seleccionado la subopción C2 de la opción C.');
+  } else {
+    console.log('Subopción inválida.');
+  }
+} else {
+  console.log('Opción inválida.');
+}
+
+
+-----------------------------------------------------------------------------------------------------
+let opcion;
+
+do {
+  opcion = prompt('Selecciona una de las siguientes opciones: \n 1 - Opción A \n 2 - Opción B \n 3 - Opción C');
+} while (opcion !== '1' && opcion !== '2' && opcion !== '3');
+
+// Resto del código...
+
+if (opcion === '1') {
+  let subopcionA = prompt('Selecciona una de las siguientes opciones para la opción A: \n 1 - Subopción A1 \n 2 - Subopción A2');
+
+  if (subopcionA === '1') {
+    console.log('Has seleccionado la subopción A1 de la opción A.');
+  } else if (subopcionA === '2') {
+    console.log('Has seleccionado la subopción A2 de la opción A.');
+  } else {
+    console.log('Subopción inválida.');
+  }
+} else if (opcion === '2') {
+  let subopcionB = prompt('Selecciona una de las siguientes opciones para la opción B: \n 1 - Subopción B1 \n 2 - Subopción B2');
+
+  if (subopcionB === '1') {
+    console.log('Has seleccionado la subopción B1 de la opción B.');
+  } else if (subopcionB === '2') {
+    console.log('Has seleccionado la subopción B2 de la opción B.');
+  } else {
+    console.log('Subopción inválida.');
+  }
+} else if (opcion === '3') {
+  let subopcionC = prompt('Selecciona una de las siguientes opciones para la opción C: \n 1 - Subopción C1 \n 2 - Subopción C2');
+
+  if (subopcionC === '1') {
+    console.log('Has seleccionado la subopción C1 de la opción C.');
+  } else if (subopcionC === '2') {
+    console.log('Has seleccionado la subopción C2 de la opción C.');
+  } else {
+    console.log('Subopción inválida.');
+  }
+} else {
+  console.log('Opción inválida.');
+}
+----------------------------------------------------------------------------------------------
+
+
+
+function calcularPrecio(precioBase, pais, tipoCambio) {
+  let impuesto;
+
+  if (pais === "A") {
+    impuesto = 0.21; // IVA del 21% en Argentina
+  } else {
+    impuesto = 0.07; // Impuestos del 7% en otros países
+  }
+
+  let precioSinImpuestos = precioBase * tipoCambio;
+  let precioConImpuestos = precioSinImpuestos * (1 + impuesto);
+  
+  return precioConImpuestos.toFixed(2); // Redondear a dos decimales y retornar el precio final
+}
+
+let opcion;
+const opcionesValidas = ["1", "2", "3"];
+
+do {
+  opcion = prompt("Selecciona una de las siguientes opciones:\n1) Fender\n2) Gibson\n3) Ibanez");
+
+  if (!opcionesValidas.includes(opcion)) {
+    alert("Debes seleccionar una opción válida.");
+  }
+} while (!opcionesValidas.includes(opcion));
+
+let modelo, precio, pais;
+
+do {
+  pais = prompt("Por favor, ingresa el país de destino usando la letra correspondiente:\nA) Argentina\nR) Resto del mundo").toUpperCase();
+
+  if (pais !== "A" && pais !== "R") { // Validar entrada del usuario
+    alert("Debes ingresar un país válido.");
+  }
+} while (pais !== "A" && pais !== "R");
+
+let tipoCambio;
+
+if (pais === "A") {
+  tipoCambio = 65.5; // Tasa de cambio del dólar respecto al peso argentino
+} else {
+  tipoCambio = 1; // En otros países, se paga en la moneda local, por lo que la tasa de cambio es 1
+}
+
+switch (opcion) {
+  case "1":
+    modelo = prompt("Selecciona el modelo de Fender:\n1) Stratocaster\n2) Telecaster");
+    precio = 1000; // Precio base de la guitarra Fender
+
+    opcion = `Fender ${modelo === "1" ? "Stratocaster" : "Telecaster"} - Precio: $${calcularPrecio(precio, pais, tipoCambio)}`;
+    break;
+
+  case "2":
+    modelo = prompt("Selecciona el modelo de Gibson:\n1) Les Paul\n2) SG");
+    precio = 1200; // Precio base de la guitarra Gibson
+
+    opcion = `Gibson ${modelo === "1" ? "Les Paul" : "SG"} - Precio: $${calcularPrecio(precio, pais, tipoCambio)}`;
+    break;
+
+
+  case "3":
+    modelo = prompt("Selecciona el modelo de Ibanez:\n1) RG\n2) S");
+    precio = 800; // Precio base de la guitarra Ibanez
+
+    opcion = `Ibanez ${modelo === "1" ? "RG" : "S"} - Precio: $${calcularPrecio(precio, pais, tipoCambio)}`;
+    break;
+}
+
+console.log(`Has seleccionado la opción:\n${opcion}.`);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
